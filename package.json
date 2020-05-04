@@ -19,7 +19,9 @@
     "url": "git://github.com/mikaelbr/bacon-love.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -29,7 +31,8 @@
     "q": "^1.4.1",
     "semver": "^5.2.0",
     "workshopper": "^2.7.0",
-    "workshopper-exercise": "^2.7.0"
+    "workshopper-exercise": "^2.7.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "faithful-exec": "^0.1.0",
@@ -37,5 +40,6 @@
   },
   "engines": {
     "node": ">=4"
-  }
+  },
+  "snyk": true
 }
